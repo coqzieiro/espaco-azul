@@ -1,0 +1,36 @@
+/* Estilo do formulário de login */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    width: 300px;
+    padding: 20px;
+    background: #ffffff; /* Fundo branco */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos de entrada */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc; /* Borda cinza claro */
+    border-radius: 3px;
+}
+
+/* Botão de envio */
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
