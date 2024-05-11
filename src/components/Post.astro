@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+
+
+interface Props {
+    alt: string;
+    pic: ImageMetadata;
+}
+
+const {alt, pic} = Astro.props;
+---
+
+<div class="card md:w-96 bg-base-100 shadow-xl">
+    <figure><Image alt={alt} src={pic}/></figure>
+    <div class="card-body">
+      <h2 class="card-title"><slot/></h2>
+      <div class="card-actions justify-end">
+        <button class="btn bg-inherit">Ver mais</button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,23 @@
+---
+import SubTitle from "../components/SubTitle.astro";
+import BigTitleCentralised from "../components/BigTitleCentralised.astro";
+import Layout from "../layouts/Layout.astro";
+import Banner from "../components/Banner.astro";
+import benefitsBanner from "../images/crianca_beneficios.jpg";
+---
+
+<Layout title="Direitos">
+  <Banner alt="Criança feliz." img={benefitsBanner} />
+  <div class="container mx-auto">
+    <BigTitleCentralised>Por que contribuir com a ong?</BigTitleCentralised>
+
+    <SubTitle>
+      Contribuir com a <b>ONG ESPAÇO AZUL</b> proporciona o bem-estar e o
+      desenvolvimento social de crianças e adolescentes com <i>Transtorno do
+      Espectro Autista</i> (TEA). Ao apoiar essa causa, você não apenas oferece
+      suporte direto às famílias e indivíduos afetados pelo TEA, mas também
+      desempenha um papel fundamental na inclusão e na construção de uma
+      sociedade mais igualitária e compassiva.
+    </SubTitle>
+  </div>
+</Layout>

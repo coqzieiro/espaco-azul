@@ -1,0 +1,25 @@
+---
+import BigTitleCentralised from "../components/BigTitleCentralised.astro";
+import Post from "../components/Post.astro";
+import SubTitle from "../components/SubTitle.astro";
+import Layout from "../layouts/Layout.astro";
+
+import newsImg1 from "../images/noticiasong1.jpg";
+import newsImg2 from "../images/noticiasong2.jpg";
+
+---
+
+<Layout title="Notícias">
+    <section class="lg:px-36 md:px-24 px-4 text-justify">
+  <SubTitle>
+    Temos o propósito de fornecer recursos educacionais, compartilhar
+    experiências pessoais e destacar pesquisas científicas recentes sobre o
+    autismo infantil.</SubTitle>
+    </section>
+    <BigTitleCentralised>Últimas notícias da comunidade</BigTitleCentralised>
+    <!-- Puxar noticias do servidor, tá aqui só por mockup -->
+    <section class="md:flex px-4 md:justify-evenly py-6">
+    <Post alt="Pessoas com a bandeira da ONG Espaço azul comemorando os 10 anos." pic={newsImg1}>Comemoração 10 anos de espaço azul</Post>
+    <Post alt="Pessoas segurando uma faixa escrita 'Dia Mundial de conscientização do autismo'" pic={newsImg2}>Dia Mundial de conscientização do autismo</Post>
+    </section>
+</Layout>

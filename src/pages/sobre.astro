@@ -1,0 +1,73 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+
+import aboutBanner from "../images/sobre.png";
+import aboutPic1 from "../images/sobre2.jpeg";
+import aboutPic2 from "../images/sobre3.png";
+import Banner from "../components/Banner.astro";
+---
+
+<Layout title="Sobre">
+  <Banner alt="Crianças felizes." img={aboutBanner} />
+  <div class="grid lg:grid-cols-2 grid-rows-2 gap-8 pt-5">
+    <section class="m-6">
+      <h3 class="text-3xl text-center font-semibold py-3">
+        Uma breve história da ONG
+      </h3>
+      <p class="text-2xl">
+        A Associação de Apoio a Pais e Autistas, conhecida como Espaço Azul, tem
+        sua origem em 2013. No entanto, sua jornada começou antes, quando um
+        grupo de mães se uniu em busca de apoio mútuo e compartilhamento de
+        informações sobre o <b>Transtorno do Espectro Autista</b> (TEA). Movidas
+        pela vontade de criar um ambiente acolhedor e terapêutico para seus filhos
+        e outros jovens na mesma situação, essas mães deram os primeiros passos para
+        o que se tornaria a ONG Espaço Azul.
+      </p>
+      <br />
+      <p class="text-2xl">
+        A missão da Espaço Azul é oferecer um atendimento individualizado e
+        especializado em <b>Análise do Comportamento Aplicada</b> (Applied Behavior
+        Analysis). Essa abordagem terapêutica baseada em evidências é amplamente
+        reconhecida por sua eficácia no tratamento de crianças com TEA, ajudando
+        a desenvolver habilidades sociais, de comunicação e comportamentais.
+      </p>
+    </section>
+    <section class="m-6">
+      <Image
+        class="w-full"
+        src={aboutPic1}
+        alt="Foto da fachada da ONG Espaço Azul."
+      />
+    </section>
+    <section class="mx-6">
+      <Image
+        class="w-full"
+        src={aboutPic2}
+        alt="Foto da equipe da ONG Espaço Azul."
+      />
+    </section>
+    <section class="m-6">
+      <p class="text-2xl">
+        Contamos com uma equipe formada por psicólogo, terapeuta ocupacional,
+        fonoaudiólogo, pedagoga e psicopedagogo, oferecendo tratamento
+        interdisciplinar, que contempla todas as áreas de desenvolvimento do
+        indivíduo. Dessa maneira, o currículo do individuo envolvem as cinco
+        áreas de desenvolvimento: linguagem, cognição, habilidades sociais,
+        motoras e autocuidados. Nosso objetivo é conseguir a independência da
+        pessoa com TEA, melhorando seu contato social, fala e instalando
+        comportamentos adequados, para sua vida em sociedade.
+      </p>
+      <br />
+      <p class="text-2xl">
+        Desde sua fundação, a ONG Espaço Azul tem desempenhado um papel crucial
+        na comunidade de São Carlos, oferecendo suporte, orientação e tratamento
+        de qualidade para crianças autistas e suas famílias. Com uma abordagem
+        centrada no indivíduo e uma equipe apaixonada e dedicada, a Espaço Azul
+        continua a fazer a diferença na vida de muitas pessoas, ajudando as
+        crianças e adolescentes com TEA a alcançar seu pleno potencial e
+        integrar-se plenamente na sociedade.
+      </p>
+    </section>
+  </div>
+</Layout>

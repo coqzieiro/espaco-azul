@@ -1,0 +1,123 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Counter from "../components/Counter.astro";
+import homeImage from "../images/home.png";
+import cloudImage from "../images/nuvens.png";
+import teamImage from "../images/equipe.png";
+import { Image } from "astro:assets";
+import Banner from "../components/Banner.astro";
+import BigTitle from "../components/BigTitle.astro";
+import BigTitleCentralised from "../components/BigTitleCentralised.astro";
+import SubTitle from "../components/SubTitle.astro";
+
+import cardinali from "../images/cardinali.png";
+import saintCharles from "../images/prefeitura-sao-carlos.png";
+---
+
+<Layout title="Página Inicial">
+  <Banner alt="Professora e criança felizes." img={homeImage} />
+  <div class="text-center py-5">
+    <BigTitle>Seja bem-vindo ao espaço azul!</BigTitle>
+    <SubTitle>
+      O Espaço Azul é uma ONG de São Carlos que atua na área de cuidados com
+      pessoas autistas, especialmente com crianças e adolescentes.
+    </SubTitle>
+  </div>
+  <div class="flex justify-center">
+    <Image
+      src={cloudImage}
+      loading="eager"
+      alt="Nuvens escritas com os valores: Amor, Carinho e Respeito."
+    />
+  </div>
+  <BigTitleCentralised>Nossos projetos</BigTitleCentralised>
+  <div
+    class="lg:flex lg:justify-center lg:columns-4xl gap-8 py-5 bg-primary text-primary-content"
+  >
+    <Counter title="Crianças" num={102} />
+    <Counter title="Famílias" num={37} />
+    <Counter title="Projetos" num={2} />
+    <Counter title="Unidades" num={1} />
+  </div>
+  <div class="text-center py-5 bg-secondary text-secondary-content">
+    <BigTitle> Doe agora e faça a diferença na vida das crianças! </BigTitle>
+    <SubTitle>
+      Ajude a fazer a diferença na vida de crianças autistas doando para o
+      Espaço Azul. Sua contribuição oferece apoio vital e oportunidades para um
+      futuro mais brilhante.
+    </SubTitle>
+    <a role="button" class="btn m-4 text-4xl btn-primary" href="doar">
+      Doe Agora
+    </a>
+  </div>
+  <div class="text-center py-5">
+    <BigTitle>Depoimentos</BigTitle>
+    <SubTitle>
+      Garanta a continuidade e a ampliação dos atendimentos das crianças, jovens
+      e adultos com deficiências intelectuais.
+    </SubTitle>
+    <div class="carousel rounded-box w-96 lg:p-16">
+      <div id="depoimento1" class="carousel-item relative w-full">
+        <Card author="Graciele Prata"
+          ><i
+            >"É uma ONG com pessoas muito capacitadas e amam o que fazem, confio
+            muito no trabalho deles"</i
+          ></Card
+        >
+      </div>
+      <div id="depoimento2" class="carousel-item relative w-full">
+        <Card author="Marlete V. Santos"
+          ><i
+            >"O trabalho da Espaço Azul vai muito além do educacional. Eles
+            criam um ambiente de inclusão e aceitação!"</i
+          ></Card
+        >
+      </div>
+      <div id="depoimento3" class="carousel-item relative w-full">
+        <Card author="Franciele Lima"
+          ><i
+            >"Como voluntária na Espaço Azul, testemunhei em primeira mão o
+            impacto transformador que têm na vida das crianças com TEA"</i
+          ></Card
+        >
+      </div>
+    </div>
+    <div class="flex justify-center w-full py-2 gap-2">
+      <a href="#depoimento1" class="btn lg:btn-xs">1</a>
+      <a href="#depoimento2" class="btn lg:btn-xs">2</a>
+      <a href="#depoimento3" class="btn lg:btn-xs">3</a>
+    </div>
+    <div class="grid md:grid-cols-2 md:grid-rows-2 container mx-auto">
+      <div class="place-content-center">
+        <div class="carousel carousel-center w-96">
+          <div class="carousel-item">
+            <Image
+              src={cardinali}
+              class="h-full max-h-64 w-auto"
+              alt="Imobiliária Cardinali"
+            />
+          </div>
+          <div class="carousel-item">
+            <Image
+              src={saintCharles}
+              class="h-full max-h-64 w-auto"
+              alt="Prefeitura de São Carlos"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="place-content-center flex">
+        <Image src={teamImage} class="w-1/2" alt="Prefeitura de São Carlos" />
+      </div>
+      <div>
+        <BigTitleCentralised>Parceiros</BigTitleCentralised>
+        <SubTitle>Entidades que ajudam a ONG </SubTitle>
+      </div>
+      <div>
+        <BigTitleCentralised>Conheça a nossa equipe</BigTitleCentralised>
+      </div>
+    </div>
+  </div>
+</Layout>

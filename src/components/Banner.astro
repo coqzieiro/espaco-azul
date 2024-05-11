@@ -1,0 +1,16 @@
+---
+import { Image } from "astro:assets";
+interface Props {
+  img: ImageMetadata;
+  alt: string;
+}
+
+const { img, alt} = Astro.props;
+---
+
+<Image
+  class="w-full object-cover object-top h-60"
+  loading="eager"
+  src={img}
+  alt={alt}
+/>
