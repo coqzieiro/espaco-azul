@@ -3,37 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espaço Azul - Sobre</title>
+    <title>Espaço Azul - Página Inicial</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/sobre.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <header class="">
-        <!-- cabeçalho do site -->
-        <nav class="navbar navbar-expand-lg">
-            <ul class="container">
-                <li class="navbar-brand"><img alt="Logo Espaço Azul" src="./img/logo.png" height="50px" ></li>
-                <li><a href="home.html">HOME</a></li>
-                <li class="selected"><a href="sobre.html">SOBRE</a></li>
-                <li><a href="beneficios.html">DIREITOS</a></li>
-                <li><a href="noticias.html">NOTÍCIAS</a></li>
-                <li><a href="doacao.html">DOAÇÃO</a></li>
-                <li><a href="contato.html">CONTATO</a></li>
-                <li><a href="transparencia.html">TRANSPARÊNCIA</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+ <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Logo Espaço Azul" style="max-width: 150px; max-height: 150px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">SOBRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="beneficios.html">DIREITOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">NOTÍCIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doacao.html">DOAÇÃO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">CONTATO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transparencia.html">TRANSPARÊNCIA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
     <main>
-        <!-- conteúdo principal da página -->
         <section>
-            <h2>Sobre o Espaço Azul</h2>
-            <p>O Espaço Azul é uma organização não governamental sem fins lucrativos dedicada a ajudar crianças e adolescentes autistas a alcançar seu potencial máximo. Fundada em 2005, nossa missão é oferecer apoio, educação e recursos para as famílias afetadas pelo autismo.</p>
-            <p>Nossos programas incluem terapias comportamentais, suporte educacional, atividades recreativas e workshops para pais e cuidadores. Acreditamos na importância da inclusão e no poder da comunidade para criar um mundo onde todos tenham a oportunidade de prosperar.</p>
-            <p>Junte-se a nós na jornada para tornar o mundo um lugar mais acolhedor e inclusivo para todos.</p>
+            <img src="./img/sobre1.png" alt="Mulher brincando com crianças" class="imagem1 mb-4">
+        <!-- conteúdo principal da página -->
+        <div class="container d-grid">
+            <div class="row mb-4">
+                <div class="col-lg-6">
+                    <div class="titulo">UMA BREVE HISTÓRIA DA ONG</div>
+                    <div class="main"> A Associação de Apoio a Pais e Autistas existe desde 2013, porém esse trabalho teve início bem antes, através do encontro de algumas mães, que buscavam trocar informações sobre o TEA. Nossa missão é oferecer atendimento individual e especializado ABA (do termo original em inglês Apllied Behavior Analysis- Análise do Comportamento Aplicada).</div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center">  
+                    <img src="./img/sobre2.png" alt="Membros da ONG" class="imagem2">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="./img/sobre3.png" alt="Mais membros da ONG" class="imagem3">
+                </div>
+                <div class="col-lg-6">
+                    <div class="main"> Contamos com uma equipe formada por psicólogo, terapeuta ocupacional, fonoaudiólogo, pedagoga e psicopedagogo, oferecendo tratamento interdisciplinar, que contempla todas as áreas de desenvolvimento do indivíduo com TEA. Dessa maneira, o currículo do individuo envolvem as cinco áreas de desenvolvimento: linguagem, cognição, habilidades sociais, motoras e autocuidados. Nosso objetivo é conseguir a independência da pessoa com TEA, melhorando seu contato social, fala e instalando comportamentos adequados, para sua vida em sociedade.</div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12">
+                    <img src="./img/vlibras.png" alt="Símbolo vlibras" class="vlibras">
+                </div>
+            </div>
+        </div> 
         </section>
     </main>
     <footer>
-        <!-- rodapé do site -->
-        <p>&copy; 2024 Espaço Azul. Todos os direitos reservados.</p>
-    </footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5 justify-content-evenly">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="line"></div>
+                        <ul class="social-icons">
+                            <li><img src="img/email.png".jpg" alt="Ícone Twitter" style="max-width: 40px; max-height: 40px"> ongespacoazul@gmail.com</li>
+                            <li><img src="img/telefone.png" alt="Ícone Instagram" style="max-width: 40px; max-height: 40px"> +55 (16) 3371-6200</li>
+                            <li><a href="https://www.instagram.com/espacoazulsaocarlos/" target="_blank"><img src="img/insta.png" alt="Ícone GitHub" style="max-width: 40px; max-height: 40px"></a> @espacoazulsaocarlos</li>
+                            <li><a href="https://maps.app.goo.gl/dX9S6YjQ4GaQ6GfM8" target="_blank"><img src="img/localizacao.png" alt="Ícone Dribbble" style="max-width: 40px; max-height: 40px"></a> Rua: Nove de Julho, 2595</li>
+                        </ul>
+                    </div>                    
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="#"><img src="./img/logo2.png" alt="" style="max-width: 200px; max-height: 200px;"></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center"> 
+                        <p class="justified">Somos uma Organização da Sociedade Civil, sem fins lucrativos, que cuida e atende crianças e adolescentes com TEA. Proporcionamos a educação, o desenvolvimento e a inclusão social com muito amor e carinho.</p>
+                        <p class="centered mb-0">Confira nossa <a href="">Política de Privacidade.</a></p>
+                        <a href="login.html"><img src="./img/area-restrita.png" alt="" style="max-width: 100px; max-height: 100px;"></a>
+                    </div>          
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="mb-0">&copy; 2024 Espaço Azul. Todos os direitos reservados.</p>      
+        </div>
+    </footer>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
