@@ -1,0 +1,90 @@
+footer {
+    bottom: 0; /* Fixando o footer na parte inferior */
+    width: 100%; /* Garantindo que o footer ocupe toda a largura */
+    padding: 10px 0; /* Adicionando algum espaçamento ao redor do conteúdo do footer */
+    background-color: #2E3B69; /* Cor de fundo do footer */
+    text-align: center; /* Centralizando o texto do footer */
+}
+
+.texto-inicial {
+    text-align: justify;
+}
+
+.footer-bottom {
+    padding: 0px 0;
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+}
+
+.social-icons{
+    padding-top: 50px;
+}
+
+.social-icons li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Estilo para a div das imagens */
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.float-beneficios {
+    display: flex; /* Ativa o layout flexbox para alinhar os elementos lado a lado */
+}
+
+.float-left {
+    flex: 1; /* Define a largura da div "float-left" em 1 para ocupar o espaço disponível */
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.float-right {
+    flex: 1; /* Define a largura da div "float-right" em 1 para ocupar o espaço disponível */
+    text-align: justify; /* Alinha o conteúdo da div "float-right" à direita */
+    padding-left: 20px;
+}
+
+.float-beneficios-img {
+    display: flex; /* Ativa o layout flexbox para alinhar os elementos lado a lado */
+}
+
+.float-left-img {
+    flex: 1; /* Define a largura da div "float-left" em 1 para ocupar o espaço disponível */
+    text-align: justify;
+}
+
+.float-right-img {
+    flex: 1; /* Define a largura da div "float-right" em 1 para ocupar o espaço disponível */
+    text-align: justify; /* Alinha o conteúdo da div "float-right" à direita */
+}
+
+.image-container {
+    display: flex; /* Ativa o layout flexbox para alinhar as imagens lado a lado */
+}
+
+.image-container img {
+    flex: 1; /* Define a largura da imagem em 1 para ocupar o espaço disponível */
+    margin-right: 0px; /* Adiciona um espaçamento entre as imagens */
+}
+
+.footer-top {
+    margin-top: 25px; /* Adiciona um espaçamento de 20px entre o footer-top e a próxima seção */
+}
+
+.text-center {
+    text-align: center; /* Centraliza o texto */
+}
+
+.justified {
+    text-align: justify; /* Justifica o texto */
+}
+
+.centered {
+    text-align: center; /* Centraliza o texto */
+}
+
+.conteudo {
+    padding: 50px;
+}
