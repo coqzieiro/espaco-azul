@@ -10,11 +10,6 @@ footer {
     text-align: justify;
 }
 
-.footer-bottom {
-    padding: 0px 0;
-    margin: 0 auto;
-}
-
 .social-icons {
     padding-top: 50px;
 }
@@ -109,33 +104,6 @@ footer {
     .float-right-img {
         flex: auto;
         padding: 0;
-        text-align: center;
-    }
-}
-
-@media (max-width: 576px) {
-    .conteudo {
-        padding: 20px;
-    }
-
-    .footer-top {
-        margin-top: 15px;
-    }
-
-    .footer-bottom {
-        padding: 10px 0;
-    }
-
-    .footer-top,
-    .footer-bottom {
-        text-align: center;
-    }
-
-    .social-icons {
-        padding-top: 30px;
-    }
-
-    .social-icons li {
         text-align: center;
     }
 }

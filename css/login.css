@@ -73,20 +73,6 @@ footer {
     text-align: center; /* Centralizando o texto do footer */
 }
 
-.footer-bottom {
-    padding: 0px 0;
-    margin: 0 auto; /* Centraliza a div horizontalmente */
-}
-
-.social-icons{
-    padding-top: 50px;
-}
-
-.social-icons li {
-    margin-bottom: 10px;
-    text-align: left;
-}
-
 /* Estilo para a div das imagens */
 .wrapper {
     display: flex;
