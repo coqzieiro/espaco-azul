@@ -1,8 +1,44 @@
-.login-form .qr-code {
-    display: block;
-    margin: 10px auto;
-    width: 80px; 
-    height: 80px;
-    background-image: url('caminho-para-seu-qr-code.png');
-    background-size: cover;
+
+p{
+    font-size: 15px;
+    text-align: center;
+}
+.textao{
+    color: #515151;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline;
+    font-size: 20px;
+}
+
+#conteudoMeio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+    gap: 20px; /* Espaçamento entre as imagens */
+    
+}
+@media (max-width: 768px) { /* Quando a largura da tela for menor que 768px */
+    #conteudoMeio{
+        grid-template-columns: 1fr; /* Apenas uma coluna */
+    }
+}
+.imagem2{
+    width: 200px;
+    width: 100%;
+}
+.imagem1{
+    width: 200px;
+    width: 100%;
+    margin-top: 70px;
+}
+.imagem3{
+    text-align: justify;
+    width: 100%;
+    margin-top: 70px;
+}
+#conta{
+    color: #2E3B69;
+    font-weight: bold;
+    text-decoration: none;
+
 }
