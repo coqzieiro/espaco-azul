@@ -13,6 +13,11 @@ footer {
     margin: 0 auto;
 }
 
+button a{
+    text-decoration: none;
+    color: #fff
+}
+
 .footer-top {
     margin-top: 25px;
 }
@@ -37,7 +42,6 @@ footer {
     font-size: 1.8rem;
     text-align: justify;
 }
-
 
 .imagem2 {
     height: auto;
