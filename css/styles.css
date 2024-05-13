@@ -15,7 +15,6 @@ p {
 /* Header styles */
 header {
     background-color: white;
-    color: black;
     position: fixed;
     top: 0;
     width: 100%;
@@ -44,7 +43,7 @@ header {
 }
 
 .navbar ul li a:hover {
-    background-color: #f0f0f0; /* Background color on hover */
+    background-color: #d4d4d4; /* Background color on hover */
     color: #000; /* Text color on hover */
     border-radius: 5px; /* Rounded corners */
 }
