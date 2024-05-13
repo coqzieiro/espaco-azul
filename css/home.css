@@ -17,7 +17,6 @@ footer {
     margin-top: 25px;
 }
 
-
 .imagem1 {
     width: 120rem;
     height: 30rem;
@@ -70,7 +69,12 @@ section {
 h2 {
     padding: 1vh;
 }
+
 .img-depoimentos {
     max-height: 400px;
+}
+
+.aumenta-letra {
+    font-size: 1.2vw;
 }
 

@@ -8,6 +8,10 @@ body {
     padding: 0;
 }
 
+p {
+    text-align: justify;
+}
+
 /* Header styles */
 header {
     background-color: white;
@@ -44,7 +48,6 @@ header {
     color: #000; /* Text color on hover */
     border-radius: 5px; /* Rounded corners */
 }
-
 
 /* Main content styles */
 main {
@@ -171,6 +174,10 @@ li a {
     text-indent: 50px;
 }
 
+.contraste {
+    flex-direction: column;
+}
+
 /* Media queries for container width */
 @media (min-width: 576px) {
     .container {
@@ -200,9 +207,4 @@ li a {
 a {
     text-decoration: none;
     color: #40C351;
-}
-
-
-.contraste {
-    flex-direction: column;
 }
