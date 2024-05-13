@@ -66,12 +66,33 @@ section {
     padding: 1.2rem;
 }
 
-/* Footer styles */
+/* Footer */
 footer {
-    background-color: #2E3B69;
     color: #fff;
-    width: 100%;
     margin-bottom: 0;
+    width: 100%; /* Garantindo que o footer ocupe toda a largura */
+    padding: 10px 0; /* Adicionando algum espaçamento ao redor do conteúdo do footer */
+    background-color: #2E3B69; /* Cor de fundo do footer */
+    text-align: center; /* Centralizando o texto do footer */
+    z-index: 1;
+}
+
+.footer-bottom {
+    padding: 0px 0;
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+}
+
+.footer-top {
+    margin-top: 25px;
+}
+
+.social-icons{
+    padding-top: 50px;
+}
+
+.social-icons li {
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 /* Login form QR code */

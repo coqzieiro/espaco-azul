@@ -1,0 +1,36 @@
+/* Header centralizado */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para a seção de contato */
+.contato {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    bottom: 0; /* Fixando o footer na parte inferior */
+    width: 100%; /* Garantindo que o footer ocupe toda a largura */
+    padding: 10px 0; /* Adicionando algum espaçamento ao redor do conteúdo do footer */
+    background-color: #2E3B69; /* Cor de fundo do footer */
+    text-align: center; /* Centralizando o texto do footer */
+}
+
+.footer-bottom {
+    padding: 0px 0;
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+}
+
+.social-icons{
+    padding-top: 50px;
+}
+
+.social-icons li {
+    margin-bottom: 10px;
+    text-align: left;
+}
