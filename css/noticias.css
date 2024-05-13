@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ultimas-atualizacoes{
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #383838;
+    margin-bottom: 4rem;
+}
+
+.proposito{
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+}
+
+img{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.card img{
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+
+
+
+  
