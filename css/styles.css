@@ -56,15 +56,9 @@ main {
     margin-top: 100px;
 }
 
-
 /* Centered title */
 .titulo-centralizado {
     text-align: center;
-}
-
-/* Section padding */
-section {
-    padding: 1.2rem;
 }
 
 /* Footer */
@@ -74,14 +68,13 @@ footer {
     width: 100%; /* Garantindo que o footer ocupe toda a largura */
     padding: 10px 0; /* Adicionando algum espaçamento ao redor do conteúdo do footer */
     background-color: #2E3B69; /* Cor de fundo do footer */
-    text-align: center; /* Centralizando o texto do footer */
+    text-align: center; 
     z-index: 1;
 }
 
 .footer-bottom {
-    padding: 0px 0;
-    margin: 0 auto; 
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .centered {
@@ -102,45 +95,12 @@ footer {
     text-align: left;
 }
 
-/* Login form QR code */
-.login-form .qr-code {
-    display: block;
-    margin: 10px auto;
-    width: 80px; 
-    height: 80px;
-    background-image: url('caminho-para-seu-qr-code.png');
-    background-size: cover;
-}
-
-/* Selected list item */
 li.selected {
     text-decoration: none;
     border-bottom: 0.2rem solid #00109B;
     border-radius: 5%;
 }
 
-/* Donate section styles */
-.doe-agora {
-    padding: 3rem;
-    background-color: #B2CEEF;
-}
-
-.doe-agora p {
-    margin: 4rem;
-}
-
-.doe-agora button {
-    display:block;
-    margin: 0 auto;
-    color: white;
-    padding: 0.8rem;
-    border-radius: 0.9rem;
-    border: 0;
-    background-color: #3F3333;
-    font-size: 18pt;
-}
-
-/* Counter section styles */
 #counter {
     background-color: #2E3B69;
     background-position: center;
@@ -148,46 +108,39 @@ li.selected {
     padding: 3rem;
 }
 
-/* Image styles */
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Responsive adjustments */
 @media (max-width: 767px) {
     section {
         padding: 0.8rem; 
     }
 }
 
-/* List styles */
 ul, ol {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-/* Link styles */
 li a {
     color: #515151;
     font-weight: bold;
     text-decoration: none;
 }
 
-/* Center align for columns */
 .col-auto {
     text-align: center;
 }
 
-/* Center align for images */
 .imagem-centralizada {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Container styles */
 .container {
     width: 100%;
     padding-right: 15px;
@@ -196,7 +149,6 @@ li a {
     margin-left: auto;
 }
 
-/* Paragraph indentation */
 .recuo-paragrafo {
     text-indent: 50px;
 }
@@ -205,7 +157,6 @@ li a {
     flex-direction: column;
 }
 
-/* Media queries for container width */
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -257,7 +208,6 @@ li a {
     }
 }
 
-/* Link styles */
 a {
     text-decoration: none;
     color: #40C351;
