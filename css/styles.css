@@ -1,32 +1,52 @@
+/* Font import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+/* General reset */
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Header styles */
 header {
     background-color: white;
     color: black;
-    text-align: center;
     position: fixed;
     top: 0;
     width: 100%;
+    font-weight: bold;
+    display: flex; /* Adiciona display flex */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    z-index: 1;
+}
+
+/* Navigation links */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px; /* Espaçamento entre os itens do menu */
 }
 
 .navbar ul li a {
-    color: #333; /* Cor do texto padrão */
-    text-decoration: none; /* Remover sublinhado */
-    padding: 10px 15px; /* Espaçamento interno */
+    color: #333; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Internal spacing */
 }
 
 .navbar ul li a:hover {
-    background-color: #f0f0f0; /* Cor de fundo quando hover */
-    color: #000; /* Cor do texto quando hover */
-    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #f0f0f0; /* Background color on hover */
+    color: #000; /* Text color on hover */
+    border-radius: 5px; /* Rounded corners */
 }
 
+
+/* Main content styles */
 main {
     text-align: center;
     font-size: 15pt;
@@ -34,14 +54,17 @@ main {
     padding: auto;
 }
 
+/* Centered title */
 .titulo-centralizado {
     text-align: center;
 }
 
+/* Section padding */
 section {
     padding: 1.2rem;
 }
 
+/* Footer styles */
 footer {
     background-color: #2E3B69;
     color: #fff;
@@ -49,6 +72,7 @@ footer {
     margin-bottom: 0;
 }
 
+/* Login form QR code */
 .login-form .qr-code {
     display: block;
     margin: 10px auto;
@@ -58,12 +82,14 @@ footer {
     background-size: cover;
 }
 
+/* Selected list item */
 li.selected {
     text-decoration: none;
     border-bottom: 0.2rem solid #00109B;
     border-radius: 5%;
 }
 
+/* Donate section styles */
 .doe-agora {
     padding: 3rem;
     background-color: #B2CEEF;
@@ -84,6 +110,7 @@ li.selected {
     font-size: 18pt;
 }
 
+/* Counter section styles */
 #counter {
     background-color: #2E3B69;
     background-position: center;
@@ -91,39 +118,46 @@ li.selected {
     padding: 3rem;
 }
 
+/* Image styles */
 img {
     max-width: 100%;
     height: auto;
 }
 
+/* Responsive adjustments */
 @media (max-width: 767px) {
     section {
         padding: 0.8rem; 
     }
 }
 
+/* List styles */
 ul, ol {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
+/* Link styles */
 li a {
     color: #515151;
     font-weight: bold;
     text-decoration: none;
 }
 
+/* Center align for columns */
 .col-auto {
     text-align: center;
 }
 
+/* Center align for images */
 .imagem-centralizada {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Container styles */
 .container {
     width: 100%;
     padding-right: 15px;
@@ -132,10 +166,12 @@ li a {
     margin-left: auto;
 }
 
+/* Paragraph indentation */
 .recuo-paragrafo {
     text-indent: 50px;
 }
 
+/* Media queries for container width */
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -160,6 +196,7 @@ li a {
     }
 }
 
+/* Link styles */
 a {
     text-decoration: none;
     color: #40C351;

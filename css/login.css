@@ -1,6 +1,5 @@
-/* Estilo do formulário de login */
 .login-container {
-    position: relative; /* Adicionando posição relativa ao container */
+    position: relative; 
     display: flex;
     flex: 1; /* Ocupa o espaço restante */
     max-width: 300px; /* Define a largura máxima */

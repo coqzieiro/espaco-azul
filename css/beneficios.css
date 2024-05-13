@@ -1,9 +1,9 @@
 footer {
-    bottom: 0; /* Fixando o footer na parte inferior */
-    width: 100%; /* Garantindo que o footer ocupe toda a largura */
-    padding: 10px 0; /* Adicionando algum espaçamento ao redor do conteúdo do footer */
-    background-color: #2E3B69; /* Cor de fundo do footer */
-    text-align: center; /* Centralizando o texto do footer */
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #2E3B69;
+    text-align: center;
 }
 
 .texto-inicial {
@@ -12,10 +12,10 @@ footer {
 
 .footer-bottom {
     padding: 0px 0;
-    margin: 0 auto; /* Centraliza a div horizontalmente */
+    margin: 0 auto;
 }
 
-.social-icons{
+.social-icons {
     padding-top: 50px;
 }
 
@@ -24,67 +24,118 @@ footer {
     text-align: left;
 }
 
-/* Estilo para a div das imagens */
 .wrapper {
     display: flex;
     justify-content: center;
 }
 
 .float-beneficios {
-    display: flex; /* Ativa o layout flexbox para alinhar os elementos lado a lado */
+    display: flex;
 }
 
 .float-left {
-    flex: 1; /* Define a largura da div "float-left" em 1 para ocupar o espaço disponível */
+    flex: 1;
     text-align: justify;
     padding-right: 20px;
 }
 
 .float-right {
-    flex: 1; /* Define a largura da div "float-right" em 1 para ocupar o espaço disponível */
-    text-align: justify; /* Alinha o conteúdo da div "float-right" à direita */
+    flex: 1;
+    text-align: justify;
     padding-left: 20px;
 }
 
 .float-beneficios-img {
-    display: flex; /* Ativa o layout flexbox para alinhar os elementos lado a lado */
+    display: flex;
 }
 
 .float-left-img {
-    flex: 1; /* Define a largura da div "float-left" em 1 para ocupar o espaço disponível */
+    flex: 1;
     text-align: justify;
 }
 
 .float-right-img {
-    flex: 1; /* Define a largura da div "float-right" em 1 para ocupar o espaço disponível */
-    text-align: justify; /* Alinha o conteúdo da div "float-right" à direita */
+    flex: 1;
+    text-align: justify;
 }
 
 .image-container {
-    display: flex; /* Ativa o layout flexbox para alinhar as imagens lado a lado */
+    display: flex;
 }
 
 .image-container img {
-    flex: 1; /* Define a largura da imagem em 1 para ocupar o espaço disponível */
-    margin-right: 0px; /* Adiciona um espaçamento entre as imagens */
+    flex: 1;
+    margin-right: 0px;
 }
 
 .footer-top {
-    margin-top: 25px; /* Adiciona um espaçamento de 20px entre o footer-top e a próxima seção */
+    margin-top: 25px;
 }
 
 .text-center {
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
 
 .justified {
-    text-align: justify; /* Justifica o texto */
+    text-align: justify;
 }
 
 .centered {
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
 
 .conteudo {
     padding: 50px;
+}
+
+@media (max-width: 767px) {
+    .float-beneficios {
+        flex-direction: column;
+    }
+
+    .float-left,
+    .float-right {
+        flex: auto;
+        padding: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .float-beneficios-img {
+        flex-direction: column;
+    }
+
+    .float-left-img,
+    .float-right-img {
+        flex: auto;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .conteudo {
+        padding: 20px;
+    }
+
+    .footer-top {
+        margin-top: 15px;
+    }
+
+    .footer-bottom {
+        padding: 10px 0;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .social-icons {
+        padding-top: 30px;
+    }
+
+    .social-icons li {
+        text-align: center;
+    }
 }
