@@ -1,0 +1,57 @@
+
+.equipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.equipe-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 5%;
+}
+.equipe img{
+    width: 50%;
+}
+
+.equipe-conheca{
+    display: flex;
+    align-content: flex-start;
+}
+
+.profile {
+    display: flex;
+    background-color: #B2CEEF;
+    justify-content: space-between;
+    max-height: 100vh;
+    width: 100%;
+    padding: 4%;
+}
+
+.profile-2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    max-height: 100vh;
+    width: 100%;
+    padding: 4%;
+}
+
+.profile-info {  
+    display: flex;
+    font-family: "Inter", sans-serif; 
+    font-size: 2vw;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-social-midia {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-social-midia img{
+    margin: 10px;
+    width: 70%
+}
