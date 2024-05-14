@@ -5,9 +5,11 @@ header {
     align-items: center;
 }
 
-/* Estilo para a seção de contato */
 .contato {
+    text-align: justify;
+    background-color: #F5F5F5;
     padding: 20px;
-    background-color: #f5f5f5;
-    text-align: center;
+    margin-bottom:10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
