@@ -15,26 +15,42 @@ p{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
     gap: 20px; /* Espaçamento entre as imagens */
+    place-items: center;
     
 }
 @media (max-width: 768px) { /* Quando a largura da tela for menor que 768px */
     #conteudoMeio{
         grid-template-columns: 1fr; /* Apenas uma coluna */
+        place-items: center;
     }
+   .imagem1{
+    margin-bottom: 50px;
+   }
+
 }
-.imagem2{
-    width: 200px;
-    width: 100%;
-}
+
 .imagem1{
     width: 200px;
-    width: 100%;
+    width: 50%;
+    align-self: center;
     margin-top: 70px;
 }
+
+.imagem2{
+    width: 200px;
+    width: 50%;
+    align-self: center;
+    transition: transform 0.3s ease; 
+}
+.imagem2:hover{
+    transform: scale(1.3);
+}
+
 .imagem3{
     text-align: justify;
-    width: 100%;
+    width: 50%;
     margin-top: 70px;
+    align-self: center;
 }
 #conta{
     color: #2E3B69;
