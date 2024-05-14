@@ -1,7 +1,5 @@
-/* Font import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* General reset */
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
@@ -12,7 +10,6 @@ p {
     text-align: justify;
 }
 
-/* Header styles */
 header {
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0,0.1); 
@@ -20,13 +17,12 @@ header {
     top: 0;
     width: 100%;
     font-weight: bold;
-    display: flex; /* Adiciona display flex */
-    justify-content: center; /* Centraliza os elementos horizontalmente */
-    align-items: center; /* Centraliza os elementos verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
 }
 
-/* Navigation links */
 .navbar ul {
     display: flex;
     list-style: none;
@@ -34,19 +30,19 @@ header {
 }
 
 .navbar ul li {
-    margin: 0 10px; /* Espaçamento entre os itens do menu */
+    margin: 0 10px;
 }
 
 .navbar ul li a {
-    color: #333; /* Default text color */
-    text-decoration: none; /* Remove underline */
-    padding: 10px 15px; /* Internal spacing */
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
 }
 
 .navbar ul li a:hover {
-    background-color: #d4d4d4; /* Background color on hover */
-    color: #000; /* Text color on hover */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #d4d4d4; 
+    color: #000;
+    border-radius: 5px;
 }
 
 main {
@@ -57,18 +53,16 @@ main {
     margin-top: 100px;
 }
 
-/* Centered title */
 .titulo-centralizado {
     text-align: center;
 }
 
-/* Footer */
 footer {
     color: #fff;
     margin-bottom: 0;
-    width: 100%; /* Garantindo que o footer ocupe toda a largura */
-    padding: 10px 0; /* Adicionando algum espaçamento ao redor do conteúdo do footer */
-    background-color: #2E3B69; /* Cor de fundo do footer */
+    width: 100%;
+    padding: 10px 0;
+    background-color: #2E3B69;
     text-align: center; 
     z-index: 1;
 }

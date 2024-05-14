@@ -1,79 +1,62 @@
 .login-container {
     position: relative; 
     display: flex;
-    flex: 1; /* Ocupa o espaço restante */
-    max-width: 300px; /* Define a largura máxima */
+    flex: 1;
+    max-width: 300px; 
     padding: auto;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Mudando 'height' para 'min-height' para garantir que o container tenha pelo menos a altura da janela */
+    min-height: 100vh; 
 }
 
 .login-footer {
-    position: fixed; /* Volte ao posicionamento normal */
     bottom: auto;
-    margin-top: 80px; /* Adicione margem superior para afastar o footer da tela de login */
 }
 
 .login-form {
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    max-width: 400px;
     padding: 20px;
-    background: #B2CEEF; /* Fundo branco */
+    background: #B2CEEF;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 200px;
 }
 
-/* Campos de entrada */
 .login-form input[type="text"],
 .login-form input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #cccccc; /* Borda cinza claro */
+    border: 1px solid #cccccc;
     border-radius: 3px;
 }
 
-/* Estilo para o botão de entrada */
 .login-form input[type="submit"] {
     width: calc(100% - 40px);
     padding: 10px 0;
-    background-color: #3F3333; /* Cor de fundo verde */
-    color: white; /* Cor do texto branco */
-    border: none; /* Remover borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Mudar cursor para indicar que é clicável */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    background-color: #3F3333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-/* Estilo para o botão de entrada quando hover */
 .login-form input[type="submit"]:hover {
-    background-color: #45a049; /* Cor de fundo verde mais escura quando hover */
+    background-color: #45a049;
 }
 
-/* Botão de envio */
 .login-form button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff; /* Azul */
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 3px;
     cursor: pointer;
 }
 
-/* Footer */
-footer {
-    position: absolute; /* Posicionamento absoluto */
-    bottom: 0; /* Fixando o footer na parte inferior */
-    width: 100%; /* Garantindo que o footer ocupe toda a largura */
-    padding: 10px 0; /* Adicionando algum espaçamento ao redor do conteúdo do footer */
-    background-color: #2E3B69; /* Cor de fundo do footer */
-    text-align: center; /* Centralizando o texto do footer */
-}
-
-/* Estilo para a div das imagens */
 .wrapper {
     display: flex;
     justify-content: center;
@@ -87,32 +70,29 @@ footer {
 }
 
 .float-right {
-    text-align: right; /* Ajusta o alinhamento para a direita */
+    text-align: right;
     margin-top: 300px;
     margin-left: 20px;
 }
 
-/* Estilo para as imagens */
 .image-container img {
-    max-width: 250px; /* Define a largura máxima das imagens */
-    max-height: 250px; /* Define a altura máxima das imagens */
-    float: left; /* Coloca as imagens lado a lado */
-    margin-right: 10px; /* Adiciona espaço entre as imagens */
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 10px;
 }
 
 .footer-top {
-    margin-top: 25px; /* Adiciona um espaçamento de 20px entre o footer-top e a próxima seção */
+    margin-top: 25px;
 }
 
 .text-center {
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
 
 .justified {
-    text-align: justify; /* Justifica o texto */
+    text-align: justify;
 }
 
 .centered {
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
-
