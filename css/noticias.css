@@ -5,10 +5,22 @@
 }
 
 .card img{
-    height: auto;
-    object-fit: cover;
+    width: 30rem;
+    height: 14rem;
+    object-fit: cover; /* Or 'contain' if you prefer */
 }
+
+.card-body{
+    width: 25rem;
+    height: 15rem;
+}
+
+.card-text {
+    word-wrap: break-word; /* Or 'normal' for default wrapping */
+  }
 
 .intro-noticia {
     margin-top: 80px;
 }
+
+  
