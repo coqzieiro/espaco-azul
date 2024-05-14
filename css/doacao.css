@@ -37,9 +37,9 @@
 }
 
 .imagem3 {
-    width: 100%; /* Alterado para ocupar toda a largura do contêiner pai */
+    width: 100%;
     text-align: justify;
-    align-self: center; /* Mantém o alinhamento vertical central */
+    align-self: center;
 }
 
 .imagem3 ul {
