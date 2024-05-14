@@ -1,26 +1,13 @@
-
-p{
-    font-size: 15px;
-    text-align: center;
-}
-.textao{
-    color: #515151;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline;
-    font-size: 20px;
-}
-
 #conteudoMeio{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
-    gap: 20px; /* Espaçamento entre as imagens */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
     place-items: center;
     
 }
-@media (max-width: 768px) { /* Quando a largura da tela for menor que 768px */
+@media (max-width: 768px) { 
     #conteudoMeio{
-        grid-template-columns: 1fr; /* Apenas uma coluna */
+        grid-template-columns: 1fr;
         place-items: center;
     }
    .imagem1{
@@ -28,11 +15,14 @@ p{
    }
 }
 
+.img-doacao{
+    padding: 1.1rem;
+}
+
 .imagem1{
     width: 200px;
-    width: 50%;
+    width: 80%;
     align-self: center;
-    margin-top: 70px;
 }
 
 .imagem2{
@@ -41,22 +31,33 @@ p{
     align-self: center;
     transition: transform 0.3s ease; 
 }
+
 .imagem2:hover{
     transform: scale(1.3);
 }
 
-.imagem3{
+.imagem3 {
+    width: 100%; /* Alterado para ocupar toda a largura do contêiner pai */
     text-align: justify;
-    width: 50%;
-    margin-top: 70px;
-    align-self: center;
+    align-self: center; /* Mantém o alinhamento vertical central */
 }
+
+.imagem3 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.imagem3 li {
+    white-space: nowrap;
+    margin-bottom: 5px; 
+}
+
 #conta{
     color: #2E3B69;
     font-weight: bold;
     text-decoration: none;
-
 }
+
 #espaco{
     margin-top: 20px;
 }
