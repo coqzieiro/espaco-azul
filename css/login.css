@@ -1,21 +1,23 @@
 .login-container {
-    position: relative; 
+    position: relative;
     display: flex;
     flex: 1;
-    max-width: 300px; 
+    max-width: 300px;
     padding: auto;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 .login-footer {
+    position: fixed;
     bottom: auto;
+    margin-top: 80px;
 }
 
 .login-form {
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
+    height: 300px;
     padding: 20px;
     background: #B2CEEF;
     border-radius: 10px;
@@ -57,6 +59,29 @@
     cursor: pointer;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #2E3B69;
+    text-align: center;
+}
+
+.footer-bottom {
+    padding: 0px 0;
+    margin: 0 auto;
+}
+
+.social-icons{
+    padding-top: 50px;
+}
+
+.social-icons li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
@@ -76,8 +101,9 @@
 }
 
 .image-container img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    float: left;
     margin-right: 10px;
 }
 
