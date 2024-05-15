@@ -11,7 +11,7 @@
 .card img{
     width: 30rem;
     height: 14rem;
-    object-fit: cover; /* Or 'contain' if you prefer */
+    object-fit: cover; 
 }
 
 .card-body{
@@ -21,7 +21,7 @@
 }
 
 .card-text {
-    word-wrap: break-word; /* Or 'normal' for default wrapping */
+    word-wrap: break-word; 
   }
 
 .intro-noticia {
