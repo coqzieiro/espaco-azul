@@ -7,3 +7,67 @@
     margin-top: 9rem;
     margin-bottom: 1.5rem;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #2E3B69;
+    text-align: center;
+}
+
+.footer-bottom {
+    padding: 0px 0;
+    margin: 0 auto;
+}
+
+.social-icons{
+    padding-top: 50px;
+}
+
+.social-icons li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.float-left, .float-right {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.float-right {
+    text-align: right;
+    margin-top: 300px;
+    margin-left: 20px;
+}
+
+.image-container img {
+    max-width: 250px;
+    max-height: 250px;
+    float: left;
+    margin-right: 10px;
+}
+
+.footer-top {
+    margin-top: 25px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justified {
+    text-align: justify;
+}
+
+.centered {
+    text-align: center;
+}
