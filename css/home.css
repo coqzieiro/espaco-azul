@@ -14,13 +14,11 @@ button a{
 .titulo {
     font-family: Inter;
     font-weight: Bold;
-    font-size: 2rem;
     text-align: center;
 }
 
 .main {
     font-family: Inter;
-    font-size: 1.8rem;
     text-align: justify;
 }
 
@@ -57,10 +55,6 @@ h2 {
 
 .img-depoimentos {
     max-height: 300px;
-}
-
-.aumenta-letra {
-    font-size: 1.2vw;
 }
 
 .img-fluid {
