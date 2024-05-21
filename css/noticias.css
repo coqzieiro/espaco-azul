@@ -4,33 +4,24 @@
     display: block;
 }
 
-.card{
+div .card{
+    height: 100%;
     width: 100%;
 }
 
 .card img{
-    width: 30rem;
-    height: 14rem;
+    width: 100%;
+    height: 60%;
     object-fit: cover; 
 }
 
 .card-body{
     width: 100%;
-    height: 15rem;
-    position: relative;
 }
 
-.card-text {
-    word-wrap: break-word; 
-  }
 
 .intro-noticia {
     margin-top: 80px;
 }
 
-.verMaisButton{
-    position: absolute;
-    bottom: 1rem;
-    left: 10.2rem
-}
   
