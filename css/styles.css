@@ -76,7 +76,8 @@ footer {
 }
 
 #increase-font,
-#decrease-font {
+#decrease-font,
+#contrast {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -88,7 +89,8 @@ footer {
 }
 
 #increase-font:hover,
-#decrease-font:hover {
+#decrease-font:hover,
+#contrast:hover {
     background-color: #0056b3;
 }
 
