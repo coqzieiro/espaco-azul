@@ -92,12 +92,14 @@
     div .simbolo{
         width: 16rem;
         height: 20rem;
+        object-fit:contain;
     }
     
     div .espacoAzul{
         width: 30rem;
         height: 20rem;
         padding-left: 2rem;
+        object-fit:contain;
     }
   }
 
