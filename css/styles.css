@@ -199,3 +199,8 @@ a {
     max-width: 25px;
     max-height: 25px;
 }
+
+a.contrast {
+    color: yellow;
+    text-decoration: underline;
+}
