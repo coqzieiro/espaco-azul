@@ -78,7 +78,7 @@ footer {
 #increase-font,
 #decrease-font,
 #contrast {
-    background-color: #007bff;
+    background-color: #090068;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -86,6 +86,7 @@ footer {
     border-radius: 5px;
     margin-bottom: 10px;
     margin-right: 10px; 
+    font-size: 20px;
 }
 
 #increase-font:hover,
@@ -169,4 +170,32 @@ li a {
 a {
     text-decoration: none;
     color: #40C351;
+}
+
+#floating-buttons {
+    position: fixed;
+    top: 30%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+#floating-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#floating-buttons button img {
+    max-width: 25px;
+    max-height: 25px;
 }
