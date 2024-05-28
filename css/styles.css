@@ -255,3 +255,27 @@ a.contrast {
 .tab {
     text-indent: 50px; 
 }
+
+button.login-botao {
+    background-color: #007BFF; 
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.4s; 
+}
+
+button.login-botao a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button.login-botao:hover {
+    background-color: #0056b3; 
+}
