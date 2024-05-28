@@ -5,6 +5,7 @@ button a {
 
 button.fw-bold:hover {
     background-color: #00aa00; 
+    transition: background-color 0.4s;
 }
 
 .imagem1 {
