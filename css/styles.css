@@ -204,3 +204,54 @@ a.contrast {
     color: yellow;
     text-decoration: underline;
 }
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 300px; 
+    object-fit: contain;
+    margin-bottom: 100px;
+}
+
+.carousel {
+    max-width: 300px;
+    margin: auto;
+}
+
+.carousel-item .card {
+    margin-top: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    height: 250px;
+    justify-content: center;
+}
+
+.card p {
+    margin: 15px 0;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.tab {
+    text-indent: 50px; 
+}

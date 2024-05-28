@@ -8,7 +8,6 @@
     margin-bottom: 1.5rem;
 }
 
-/* Table Styles */
 .table {
     width: 100%;
     margin-bottom: 1rem;
@@ -42,7 +41,6 @@
     background-color: #f1f1f1;
 }
 
-/* Links */
 .table a {
     color: #0056b3;
     text-decoration: none;
@@ -54,7 +52,6 @@
     text-decoration: none;
 }
 
-/* Section Heading */
 .section-heading2 {
     margin-bottom: 15px;
 }
@@ -63,7 +60,6 @@
     font-weight: bold;
 }
 
-/* List Group Styles */
 .list-group {
     width: 100%;
     margin-bottom: 1rem;
@@ -94,7 +90,6 @@
     text-decoration: none;
 }
 
-/* Footer */
 footer {
     position: absolute;
     bottom: 0;
