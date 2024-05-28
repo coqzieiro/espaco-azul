@@ -1,13 +1,100 @@
-.background{
+.background {
     background-color: #F5F5F5;
     min-height: 70rem;
 }
 
-.titulo-transparencia{
+.titulo-transparencia {
     margin-top: 9rem;
     margin-bottom: 1.5rem;
 }
 
+/* Table Styles */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    text-align: center;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Links */
+.table a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.table a:hover {
+    color: #515151;
+    text-decoration: none;
+}
+
+/* Section Heading */
+.section-heading2 {
+    margin-bottom: 15px;
+}
+
+.section-heading2 h4 {
+    font-weight: bold;
+}
+
+/* List Group Styles */
+.list-group {
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 3px solid rgba(0, 0, 0, 0.125);
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #515151;
+    border: 3px solid rgba(0, 0, 0, 0.125);
+    color: #333;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+}
+
+.list-group a {
+    color: #505050;
+    text-decoration: none;
+}
+
+.list-group a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Footer */
 footer {
     position: absolute;
     bottom: 0;
@@ -22,7 +109,7 @@ footer {
     margin: 0 auto;
 }
 
-.social-icons{
+.social-icons {
     padding-top: 50px;
 }
 
@@ -36,7 +123,8 @@ footer {
     justify-content: center;
 }
 
-.float-left, .float-right {
+.float-left,
+.float-right {
     flex: 1;
     max-width: 250px;
     text-align: center;
@@ -54,10 +142,6 @@ footer {
     max-height: 250px;
     float: left;
     margin-right: 10px;
-}
-
-.footer-top {
-    margin-top: 25px;
 }
 
 .text-center {
