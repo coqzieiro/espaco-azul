@@ -4,6 +4,10 @@ function highContrast(){
     if(c) window.location.reload(true); 
     c = true;
     changeColors(document.body);
+    var button = document.getElementById('contrast');
+    var isPressed = button.getAttribute('aria-pressed') === 'true';
+    button.setAttribute('aria-pressed', !isPressed);
+
 }
 
 function changeColors(element) {

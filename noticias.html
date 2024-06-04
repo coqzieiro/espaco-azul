@@ -10,9 +10,9 @@
 </head>
 <body class="fundo-cinza">
     <div id="floating-buttons">
-        <button id="increase-font"><strong>+</strong></button>
-        <button id="decrease-font"><strong>-</strong></button>
-        <button id="contrast" class="contraste" onclick="highContrast()">
+        <button id="increase-font" aria-label="Aumentar tamanho da fonte"><strong>+</strong></button>
+        <button id="decrease-font" aria-label="Diminuir tamanho da fonte"><strong>-</strong></button>
+        <button id="contrast" class="contraste" aria-pressed="false" onclick="highContrast()">
             <img alt="botao-contraste" src="./img/botao-contraste.png" style="max-width: 25px; max-height: 25px;">
         </button>
     </div>
@@ -26,7 +26,7 @@
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
      </script>
-    <header>
+    <header role="banner">
         <nav class="navbar navbar-expand-lg navbar-light contraste">
             <div class="container-fluid">
                 <a class="navbar-brand" href="home.html"><img src="./img/logo.png" alt="Logo Espaço Azul" style="max-width: 150px; max-height: 150px;"></a>
@@ -35,35 +35,35 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="home.html">PÁGINA INICIAL</a>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="home.html">PÁGINA INICIAL</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sobre.html">SOBRE</a>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="sobre.html">SOBRE</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="beneficios.html">DIREITOS</a>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="beneficios.html">DIREITOS</a>
                         </li>
                         <li class="selected" class="nav-item">
-                            <a class="nav-link" href="noticias.html">NOTÍCIAS</a>
+                            <a class="nav-link" role="menuitem" aria-current="page" href="noticias.html">NOTÍCIAS</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="doacao.html">DOAÇÃO</a>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="doacao.html">DOAÇÃO</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contato.html">CONTATO</a>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="contato.html">CONTATO</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="transparencia.html">TRANSPARÊNCIA</a>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="transparencia.html">TRANSPARÊNCIA</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="inscricao.html">INSCRIÇÃO</a>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="inscricao.html">INSCRIÇÃO</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="equipe.html">EQUIPE</a>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="equipe.html">EQUIPE</a>
                         </li>
                     </ul>
-                    <button class="login-botao"><a href="login.html"><strong>ENTRAR</strong></a></button>
+                    <button class="login-botao" aria-label="Login"><a href="login.html"><strong>ENTRAR</strong></a></button>
                 </div>
             </div>
         </nav>
