@@ -60,12 +60,12 @@ main{
 }
 
 .fundo{
-  background-image: url("../img/jigsaw-puzzles-821171_1280.jpg");
+  background-image: url("../img/infinite.png");
   background-size: 600px 500px;
   height: 15rem;
   width: 100%;
   background-repeat: repeat;
-  background-position: center top;
+  background-position: center;
 }
 
 
