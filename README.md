@@ -39,7 +39,7 @@ O projeto Espaço Azul foi desenvolvido utilizando as seguintes tecnologias:
 ## Como Executar Localmente
 - Executar o comando: npm install
 - Executar o comando: npm start
-- Abrir um navegador e digitar: http://localhost:3000/home
+- Abrir um navegador e digitar: http://localhost:3000/
 
 ## Integrantes
 - Felipe da Costa Coqueiro
