@@ -20,3 +20,24 @@ function changeFontSize(amount) {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to check login status
+    function checkLoginStatus() {
+        fetch('/loggedin')
+            .then(response => response.json())
+            .then(data => {
+                const loginButton = document.querySelector('.login-botao a');
+                if (data.message == "Sim") {
+                    loginButton.innerHTML = '<strong>LOGOUT</strong>';
+                    loginButton.href = '/logout';
+                }
+            })
+            .catch(error => {
+                console.error('Error checking login status:', error);
+            });
+    }
+
+    // Check login status on page load
+    checkLoginStatus();
+});

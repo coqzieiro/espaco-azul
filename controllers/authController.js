@@ -20,7 +20,16 @@ exports.login = (req, res) => {
             }
             if (match) {
                 // Se as senhas coincidem, login bem-sucedido
-                res.status(200).json({ message: "Login bem-sucedido" });
+                //res.status(200).json({ message: "Login bem-sucedido" });
+                req.session.regenerate(function (err) {
+                    if (err) next(err)
+
+                    req.session.loggedIn = true;
+                    req.session.save(function (err) {
+                        if (err) return next(err)
+                        res.redirect('/')
+                    })
+                })
             } else {
                 // Senha incorreta
                 res.status(401).json({ error: "Senha incorreta" });

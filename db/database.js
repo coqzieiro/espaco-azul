@@ -1,5 +1,7 @@
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
+const bcrypt = require('bcrypt');
+const User = require('../models/user');
 const dbPath = path.resolve(__dirname, 'mydatabase.db');
 
 const db = new sqlite3.Database(dbPath, (err) => {
@@ -19,6 +21,28 @@ const db = new sqlite3.Database(dbPath, (err) => {
                 console.log("Users table created successfully");
             }
         });
+
+        const password = process.env.ADMIN_PASSWORD || 'dev_teste';
+        const saltRounds = 10;
+        bcrypt
+        .hash(password, saltRounds)
+        .then(hash => {
+            db.run('INSERT OR IGNORE INTO users (username, password) VALUES (?, ?)', ['admin', hash]);
+        })
+        .catch(err => console.error(err.message))
+
+        db.run(`CREATE TABLE IF NOT EXISTS documents (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            title TEXT NOT NULL UNIQUE,
+            description TEXT
+        )`, (err) => {
+            if (err) {
+                console.error("Error creating documents table", err);
+            } else {
+                console.log("Documents table created successfully");
+            }
+        });
+ 
     }
 });
 

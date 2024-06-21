@@ -1,9 +1,8 @@
 const express = require('express');
+const session = require('express-session')
 const bodyParser = require('body-parser');
 const path = require('path');
 const multer = require('multer');
-const sqlite3 = require('sqlite3').verbose();
-const { open } = require('sqlite');
 const authRoutes = require('./routes/auth');
 const PORT = process.env.PORT || 3000;
 
@@ -25,18 +24,12 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-// Conectar ao banco de dados SQLite
-let db;
-open({
-  filename: './database.db',
-  driver: sqlite3.Database
-}).then(database => {
-  db = database;
-  db.run('CREATE TABLE IF NOT EXISTS documentos (id INTEGER PRIMARY KEY, titulo TEXT, descricao TEXT, arquivo TEXT)');
-});
-
 // Servir arquivos estáticos, como a página de login
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Sessões para login
+const sessionSecret = process.env.SECRET || 'espaço-blue';
+app.use(session({secret: sessionSecret, resave: false, name:'session', saveUninitialized:false}))
 
 // Usar as rotas de autenticação
 app.use('/auth', authRoutes);
@@ -46,17 +39,43 @@ app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/login.html'));
 });
 
-// Rota para adicionar um documento
-app.post('/api/documentos', upload.single('arquivo'), async (req, res) => {
-  const { titulo, descricao } = req.body;
-  const arquivo = req.file.filename;
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/home.html'));
+});
 
-  try {
-    await db.run('INSERT INTO documentos (titulo, descricao, arquivo) VALUES (?, ?, ?)', [titulo, descricao, arquivo]);
-    res.status(201).json({ message: 'Documento adicionado com sucesso!' });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
+app.get('/logout', (req, res) => {
+    req.session.loggedIn = false;
+    req.session.save(function (err) {
+        if (err) next(err)
+
+        // regenerate the session, which is good practice to help
+        // guard against forms of session fixation
+        req.session.regenerate(function (err) {
+            if (err) next(err)
+            res.redirect('/')
+        })
+    })
+});
+
+app.get('/loggedin', (req, res) => {
+    res.status(200).json({ message: req.session.loggedIn ? "Sim" : "Não"});
+});
+
+// Rota para adicionar um documento
+app.post('/api/documentos', upload.single('documents'), async (req, res) => {
+    if(!req.session.loggedIn){
+        res.status(403).json({ message: "Não autorizado" });
+        return;
+    }
+    const { descricao } = req.body;
+    const titulo = req.file.filename;
+
+    try {
+        await db.run('INSERT INTO documents (title, description) VALUES (?, ?)', [titulo, descricao]);
+        res.status(201).json({ message: 'Documento adicionado com sucesso!' });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
 });
 
 // Iniciar o servidor
