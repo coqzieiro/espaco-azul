@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const multer = require('multer');
 const authRoutes = require('./routes/auth');
+const newsController = require('./controllers/newsController');
 const PORT = process.env.PORT || 3000;
 
 const app = express();
@@ -41,6 +42,12 @@ app.get('/login', (req, res) => {
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/home.html'));
+});
+
+app.get('/news', newsController.getNews);
+app.get('/news/:id', newsController.fetchNewsById);
+app.get('/noticia', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/verNoticia.html'));
 });
 
 app.get('/logout', (req, res) => {

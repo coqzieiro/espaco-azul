@@ -42,6 +42,20 @@ const db = new sqlite3.Database(dbPath, (err) => {
                 console.log("Documents table created successfully");
             }
         });
+
+        db.run(`CREATE TABLE IF NOT EXISTS news (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            img_url TEXT NOT NULL,
+            title TEXT NOT NULL,
+            content TEXT
+        )`, (err) => {
+            if (err) {
+                console.error("Error creating documents table", err);
+            } else {
+                console.log("Documents table created successfully");
+            }
+        });
+ 
  
     }
 });
