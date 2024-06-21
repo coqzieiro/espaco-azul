@@ -1,26 +1,30 @@
-const bcrypt = require('bcrypt');
 const User = require('../models/user');
+const bcrypt = require('bcrypt');
 
 exports.login = (req, res) => {
     const { username, password } = req.body;
-
-    User.findUser(username, (err, user) => {
+    
+    // Busca o usuário pelo nome de usuário
+    User.findByUsername(username, (err, user) => {
         if (err) {
-            return res.status(500).json({ message: 'Erro no servidor' });
+            return res.status(500).json({ error: err.message });
         }
         if (!user) {
-            return res.status(404).json({ message: 'Usuário não encontrado' });
+            return res.status(404).json({ error: "Usuário não encontrado" });
         }
-
-        bcrypt.compare(password, user.password, (err, result) => {
+        
+        // Compara a senha fornecida com a senha hash armazenada no banco de dados
+        bcrypt.compare(password, user.password, (err, match) => {
             if (err) {
-                return res.status(500).json({ message: 'Erro no servidor' });
+                return res.status(500).json({ error: err.message });
             }
-            if (!result) {
-                return res.status(400).json({ message: 'Senha incorreta' });
+            if (match) {
+                // Se as senhas coincidem, login bem-sucedido
+                res.status(200).json({ message: "Login bem-sucedido" });
+            } else {
+                // Senha incorreta
+                res.status(401).json({ error: "Senha incorreta" });
             }
-
-            res.status(200).json({ message: 'Login bem-sucedido' });
         });
     });
 };

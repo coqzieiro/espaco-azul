@@ -1,12 +1,14 @@
 {
-  "name": "espaco-azul",
+  "name": "node-sqlite-auth",
   "version": "1.0.0",
-  "description": "Este é o repositório para o projeto \"Espaço Azul\", um website desenvolvido para uma ONG que oferece suporte e recursos para crianças com Transtorno do Espectro Autista (TEA). O objetivo deste projeto é criar uma plataforma online informativa e acolhedora para as famílias e cuidadores de crianças com TEA, além de fornecer informações sobre os serviços oferecidos pela organização.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
 }

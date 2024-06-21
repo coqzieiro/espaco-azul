@@ -1,18 +1,16 @@
-const bcrypt = require('bcrypt');
 const db = require('../db/database');
 
-const saltRounds = 10;
-const plainPassword = 'senha123';
-const username = 'usuario1';
-
-bcrypt.hash(plainPassword, saltRounds, (err, hash) => {
-    if (err) {
-        return console.error(err.message);
-    }
-    db.run(`INSERT INTO users (username, password) VALUES (?, ?)`, [username, hash], function(err) {
+db.serialize(() => {
+    db.run(`CREATE TABLE IF NOT EXISTS users (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username TEXT NOT NULL UNIQUE,
+        password TEXT NOT NULL
+    )`, (err) => {
         if (err) {
-            return console.error(err.message);
+            console.error("Error creating users table", err);
+        } else {
+            console.log("Users table created successfully");
         }
-        console.log(`A row has been inserted with rowid ${this.lastID}`);
+        db.close();
     });
 });
