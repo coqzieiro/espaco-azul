@@ -38,7 +38,7 @@ function populateNews(newsArray) {
                 <div class="card-body d-flex flex-column justify-content-between">
                     <h5 class="card-title fw-bold">${news.title}</h5>
                     <p class="card-text">${news.content}</p>
-                    <a href="#" class="btn btn-primary mx-auto verMaisButton">Ver Mais...</a>
+                    <a href="noticia?id=${news.id}" class="btn btn-primary mx-auto verMaisButton">Ver Mais...</a>
                 </div>
             </div>
         `;
