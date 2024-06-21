@@ -41,6 +41,10 @@ O projeto Espaço Azul foi desenvolvido utilizando as seguintes tecnologias:
 - Executar o comando: npm start
 - Abrir um navegador e digitar: http://localhost:3000/
 
+## Como Logar o Usuário
+- usuário: admin
+- senha: dev_teste
+
 ## Integrantes
 - Felipe da Costa Coqueiro
 - Fernando Alee Suaiden
