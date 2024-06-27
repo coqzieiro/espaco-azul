@@ -46,6 +46,9 @@ app.get('/', (req, res) => {
 
 app.get('/news', newsController.getNews);
 app.get('/news/:id', newsController.fetchNewsById);
+
+app.post('/news', newsController.putNews);
+
 app.get('/noticia', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/verNoticia.html'));
 });

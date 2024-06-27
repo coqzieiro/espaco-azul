@@ -48,6 +48,27 @@ function populateNews(newsArray) {
     });
 }
 
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+function updatePost(){
+    fetch('/loggedin')
+        .then(response => response.json())
+        .then(data => {
+            const newBtn = document.querySelector('.novopost');
+            if (data.message == "Sim") {
+                newBtn.removeAttribute("hidden");
+            }
+        })
+        .catch(error => {
+            console.error('Error checking login status:', error);
+        });
+
+}
 document.addEventListener('DOMContentLoaded', function() {
+    updatePost();
     getNews();
 });

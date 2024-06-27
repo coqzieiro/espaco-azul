@@ -15,6 +15,16 @@ class News {
             callback(err, row);
         }); 
     }
+
+    static putNews(title, img_url, content, callback){
+        const stmt = db.prepare("INSERT INTO news (img_url, title, content) VALUES (?, ?, ?)");
+
+        stmt.run([img_url, title, content || ''], err => {
+            callback(err, this.lastID);
+        });
+
+        stmt.finalize(); 
+    }
 }
 
 module.exports = News;
